@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Airplane airplane = new Airplane(1, "737 MAX", "Boeing", "SN123456", 2); // kapasite 2 olarak örnek
+        Airplane airplane = new Airplane(1, "737 MAX", "Boeing", "SN123456", 2);
 
         List<Reservation> reservations = new ArrayList<>();
 
@@ -84,7 +84,7 @@ public class Main {
         int day = scanner.nextInt();
         int hour = scanner.nextInt();
         int minute = scanner.nextInt();
-        scanner.nextLine(); // boşluğu tüketmek için
+        scanner.nextLine();
 
         LocalDateTime departureTime = LocalDateTime.of(year, month, day, hour, minute);
         LocalDateTime arrivalTime = departureTime.plusHours(2);
